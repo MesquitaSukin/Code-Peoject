@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+/* body, config padrão */
+/* Cormorant e Space Grotesk */
+:root {
+    --cinza: #fcf8f8;
+    --amarelo: #d4af37;
+    --verde: #6CC959;
+    --azul: #26daf1; /* 5733F5  40ce8c  EEEDF2 */
+    --verm: #f54f57;
+    --preto: #22252A; /* 1C1C1C */
+    --roxo1: rgb(73, 70, 92);
+    
+}
+/* marca texto */
+#amarelo {
+    background: #f4cf546e;
+}
+#verde {
+    background: #6cc95956;
+}
+#azul {
+    background: #13dadd59;
+}
+#verm {
+    background: #ff000d23;
+}
+#underli {
+    text-decoration: underline var(--amarelo);
+}
+#verm-color {
+    color: var(--verm);
+}
+#ama-color {
+    color: var(--amarelo);
+}
+#azu-color {
+    color: var(--azul);
+}
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 900;
+    color: var(--preto);
+    margin: 0px;
+    background-color: #fcefc5;
+    padding-bottom: 50px;
+}
+
+/* barra de navegação, logo */
+.logo-alinhamento {
+    display: flex;
+
+}
+.logo-code {
+    width: 65px;
+    height: 60px;
+    padding-right: 10px;
+}
+header {
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px;
+    width: auto;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.card-titulo h1 {
+  margin: 20px;
+  font-size: 20px;
+  color: #f7737a;;
+  font-style: italic;
+  font-weight: 500;
+
+  font-family: "Kode Mono", monospace;
+  font-size: 40px;
+  text-align: center;
+  background-color: var(--verm);
+  border-radius: 5px;
+  border: 1px solid var(--preto);
+  font-weight: 500;
+  color: var(--cinza);
+  padding: 5px;
+  margin: 90px;
+  margin-bottom: 0px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.card {
+    background-color: var(--cinza);
+    border-radius: 5px;
+    border: 1px solid var(--preto);
+    font-weight: 500;
+    font-size: 21px;
+    color: var(--preto);
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    margin: 90px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 150px;
+    margin-left: 150px;
+    text-indent: 50px;
+    line-height: 1.4;
+}
+
+.pergunta {
+    display: flex;
+}
+.pergunta img {
+    width: 8%;
+    height: 100%;
+    margin: 80px;
+    margin-left: 150px;
+    margin-right: 0px;
+    margin-top: 30px;
+}
+.balao {
+    background: #24233b;
+    color: #fcf8f8;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    margin: 100px;
+    margin-top: 30px;
+    margin-right: 150px;
+    margin-left: 50px;
+    font-family: "Space Grotesk";
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-indent: 50px;
+}
+.balao:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -10px;
+    background: #24233b;
+    -webkit-transform: rotate(45deg);
+}
+
+#alinhar, #alinhar-2{
+    display: flex;
+}
+.polaroid {
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 40px;
+    margin-left: 200px;
+    margin-right: 0px;
+    margin-top: 70px;
+    transform: rotate(5deg);
+}
+#text-1 {
+    margin-left: 0px;
+    height: 100%;
+}
+#text-2 {
+    margin-right: 0px;
+    height: 100%;
+}
+#ada {
+    height: 10%;
+    width: 15%;
+    margin-top: -5px;
+    transform: rotate(-7deg);
+}
+#compu {
+    height: 10%;
+    width: 30%;
+    margin-left: 0px;
+    margin-right: 200px;
+    margin-top: -85px;
+}
+p {
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+/* botão */
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .btn {
+    display: block;
+    padding: 0.7em 1em;
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: #d4af37;
+    letter-spacing: 0.1em;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .cube {
+    position: relative;
+    margin: 0 ;
+    transition: all 0.5s;
+  }
+  .cube .bg-top {
+    position: absolute;
+    height: 10px;
+    background: #d4af37;
+    bottom: 100%;
+    left: 5px;
+    right: -5px;
+    transform: skew(-45deg, 0);
+    margin: 0;
+    transition: all 0.4s;
+  }
+  .cube .bg-top .bg-inner {
+    bottom: 0;
+  }
+  .cube .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: #d4af37;
+    transition: all 0.4s;
+  }
+  .cube .bg-right {
+    position: absolute;
+    background: #d4af37;
+    top: -5px;
+    z-index: 0;
+    bottom: 5px;
+    width: 10px;
+    left: 100%;
+    transform: skew(0, -45deg);
+    transition: all 0.4s;
+  }
+  
+  .cube .bg-right .bg-inner {
+    left: 0;
+  }
+  .cube .bg-inner {
+    background: var(--preto);
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+  }
+  .cube .text {
+    position: relative;
+    transition: all 0.4s;
+  }
+  .cube:hover .bg-inner {
+    background: #d4af37;
+    transition: all 0.4s;
+  }
+  .cube:hover .text {
+    color: var(--preto);
+    transition: all 0.4s;
+  }
+  .cube:hover .bg-right,
+  .cube:hover .bg,
+  .cube:hover .bg-top {
+    background: var(--preto);
+  }
+  .cube:active {
+    z-index: 9999;
+    animation: bounce 0.1s linear;
+  }
+  @keyframes bounce {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+
+@media screen and (max-width: 1020px) {
+    .card-titulo h1 {
+        margin: auto;
+        margin-top: 10px;
+        width: 360px;
+    }
+
+    .pergunta {
+        flex-direction: column;
+    }
+    .pergunta p {
+        font-size: 18px;
+    }
+
+    .pergunta img {
+        width: 30%;
+        margin: 0px;
+        position: relative;
+        top: -25px;
+    }
+
+    .balao {
+        margin: auto;
+        padding: 20px;
+        width: 85%;
+    }
+
+    .balao:before {
+        width: 30px;
+        height: 30px;
+        left: 40px;
+        top: -10px;
+    }
+
+    #alinhar {
+        flex-direction: column;
+    }
+    #alinhar-2 {
+        flex-direction: column-reverse;
+    }
+    .polaroid {
+        padding: 10px;
+        padding-bottom: 60px;
+        margin: -20px;
+        margin: auto;
+        width: 300px;
+        height: auto;
+    }
+    #ada {
+        flex-direction: column;
+        width: 300px;
+    }
+    #compu {
+        flex-direction: column-reverse;
+        width: 350px;
+        margin-top: -20px;
+    }
+
+    #esquerda-text, #direita-text {
+        font-size: 20px;
+        width: 85%;
+        margin: auto;
+    }
+    .card {
+        margin: auto;
+        width: 320px;
+    }
+    .card, #text-1, #text-2 {
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 23px;
+        font-size: 18px;
+    }
+    .card h2 {
+        font-size: 25px;
+    }
+    .card-code2 {
+        margin: auto;
+        width: 100%;
+        padding: 0px;
+    }
+    .logo-code {
+        width: 100%;
+        height: 50px;
+    }
+    
+    header {
+        height: 45px;
+    }
+
+}

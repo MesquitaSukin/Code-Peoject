@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+/* body, config padrão */
+/* Cormorant e Space Grotesk */
+:root {
+    --cinza: #fcf8f8;
+    --amarelo: #d4af37;
+    --verde: #6CC959;
+    --azul: #26daf1;
+    /* 5733F5  40ce8c  EEEDF2 */
+    --verm: #f54f57;
+    --preto: #22252A;
+    /* 1C1C1C */
+    --roxo1: #24233b;
+
+}
+
+/* marca texto */
+#amarelo {
+    background: #f4cf543a;
+}
+
+#verde {
+    background: #6cc9592c;
+}
+
+#azul {
+    background: #13dadd28;
+}
+
+#verm {
+    background: #ff000d18;
+}
+
+#underli {
+    text-decoration: underline var(--amarelo);
+}
+
+#verm-color {
+    color: var(--verm);
+}
+
+#ama-color {
+    color: var(--amarelo);
+}
+
+#azu-color {
+    color: var(--azul);
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 900;
+    color: var(--preto);
+    margin: 0px;
+    background-color: #fcede1;
+}
+
+#prog {
+    font-family: "Kode Mono", monospace;
+    font-size: 20px;
+    color: #e7e7e7;
+    font-style: italic;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.card-code,
+.card-code2 {
+    width: 1000px;
+    height: 100%;
+    margin-top: 30px;
+    margin: 25px;
+    background-color: var(--preto);
+    border-radius: 8px;
+    box-shadow: 0px 10px 8px #b8b7e9;
+    border: 2px solid var(--amarelo);
+
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 13px;
+    height: 13px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.card__content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.text16 {
+    background-color: var(--preto);
+    color: white;
+    padding: 0px 0px 10px 40px;
+    font-weight: 300;
+    font-family: "Kode Mono", monospace;
+    font-size: 20px;
+}
+
+.img-text2 {
+    display: flex;
+    align-items: center;
+    grid-template-columns: 200px 20px;
+}
+
+/*fundo*/
+.fundo {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 10%, #24233b 5%, transparent 5%),
+        radial-gradient(circle at 90% 10%, #24233b 5%, transparent 5%),
+        radial-gradient(circle at 90% 90%, #24233b 5%, transparent 5%),
+        radial-gradient(circle at 10% 90%, #24233b 5%, transparent 5%);
+    background-size: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* barra de navegação, logo */
+.logo-alinhamento {
+    display: flex;
+}
+
+.logo-code {
+    width: 65px;
+    height: 60px;
+    padding-right: 10px;
+}
+
+header {
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px;
+    width: auto;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/*conteudo */
+.card {
+    width: auto;
+    height: 100%;
+    background: #f8f8f8;
+    margin: 0px 100px;
+    padding: 60px 150px;
+    border: 1px solid var(--roxo1);
+}
+
+/* texto no conteúdo*/
+.card h1 {
+    font-family: "Kode Mono", monospace;
+    font-size: 40px;
+    text-align: center;
+    background-color: #f54f57;
+    border-radius: 5px;
+    border: 1px solid var(--preto);
+    font-weight: 500;
+    color: var(--cinza);
+    padding: 5px;
+}
+
+#title {
+    letter-spacing: 20px;
+}
+
+#prog1 {
+    margin: 20px;
+    font-size: 20px;
+    color: #f7737a;
+    ;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 25px;
+    font-weight: 500;
+    text-indent: 50px;
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+}
+
+.img-text img {
+    margin: 0px 40px;
+    filter: drop-shadow(0 10px 8px #b8b7e9);
+}
+
+.pergunta {
+    display: flex;
+}
+
+.pergunta img {
+    width: 15%;
+    height: 100%;
+    margin: 0px 70px;
+}
+
+.pergunta p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.balao {
+    background: var(--roxo1);
+    color: #fcf8f8;
+    padding: 50px;
+    border-radius: 30px;
+    margin: 30px;
+    margin-top: 20px;
+    width: 900px;
+    height: 100%;
+    position: relative;
+
+}
+
+.balao:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -10px;
+    background: var(--roxo1);
+    -webkit-transform: rotate(45deg);
+}
+
+#explore {
+    text-decoration: underline;
+    text-decoration-color: var(--amarelo);
+}
+
+.card-prog2 {
+    color: var(--cinza);
+    padding: 20px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.card-code2 {
+    width: 80%;
+    margin: 60px;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    font-family: "Kode Mono", monospace;
+
+}
+
+#text a {
+    color: var(--amarelo);
+    font-size: 20px;
+    font-family: "Kode Mono", monospace;
+    display: inline;
+    width: 150px;
+    box-shadow: inset 0 0 0 0 var(--azul);
+    overflow: visible;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+#text a:hover {
+    background: var(--cinza);
+    color: var(--preto);
+    font-weight: 900;
+    box-shadow: inset 0 50px 0 0 var(--amarelo);
+    color: black;
+}
+
+#text p a {
+    color: var(--amarelo);
+    background-color: var(--roxo1);
+    border: 1px solid var(--roxo1);
+}
+
+/* botão */
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+
+.btn {
+    display: block;
+    padding: 0.7em 1em;
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: #d4af37;
+    letter-spacing: 0.1em;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.cube {
+    position: relative;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+.cube .bg-top {
+    position: absolute;
+    height: 10px;
+    background: #d4af37;
+    bottom: 100%;
+    left: 5px;
+    right: -5px;
+    transform: skew(-45deg, 0);
+    margin: 0;
+    transition: all 0.4s;
+}
+
+.cube .bg-top .bg-inner {
+    bottom: 0;
+}
+
+.cube .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: #d4af37;
+    transition: all 0.4s;
+}
+
+.cube .bg-right {
+    position: absolute;
+    background: #d4af37;
+    top: -5px;
+    z-index: 0;
+    bottom: 5px;
+    width: 10px;
+    left: 100%;
+    transform: skew(0, -45deg);
+    transition: all 0.4s;
+}
+
+.cube .bg-right .bg-inner {
+    left: 0;
+}
+
+.cube .bg-inner {
+    background: var(--preto);
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+}
+
+.cube .text {
+    position: relative;
+    transition: all 0.4s;
+}
+
+.cube:hover .bg-inner {
+    background: #d4af37;
+    transition: all 0.4s;
+}
+
+.cube:hover .text {
+    color: var(--preto);
+    transition: all 0.4s;
+}
+
+.cube:hover .bg-right,
+.cube:hover .bg,
+.cube:hover .bg-top {
+    background: var(--preto);
+}
+
+.cube:active {
+    z-index: 9999;
+    animation: bounce 0.1s linear;
+}
+
+@keyframes bounce {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .card {
+        padding: 25px;
+        width: 83%;
+        margin: auto;
+    }
+    #prog1 {
+        padding: 0px;
+    }
+    #prog1,
+    #prog {
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    .card h1 {
+        font-size: 25px;
+    }
+    .card p {
+        font-size: 22px;
+    }
+
+    #title {
+        letter-spacing: 6px;
+    }
+
+    .img-text,
+    .img-text2 {
+        flex-direction: column;
+    }
+
+    .card-code {
+        width: 200px;
+    }
+
+    .pergunta {
+        flex-direction: column;
+    }
+    .pergunta p {
+        font-size: 20px;
+    }
+
+    .pergunta img {
+        width: 30%;
+        margin: 0px;
+        position: relative;
+        top: -40px;
+    }
+
+    .balao {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .balao:before {
+        width: 30px;
+        height: 30px;
+        left: 40px;
+        top: -10px;
+    }
+    
+    .card-code2 {
+        margin: auto;
+        width: 100%;
+        padding: 0px;
+    }
+    .logo-code {
+        width: 100%;
+        height: 50px;
+    }
+    
+    header {
+        height: 45px;
+    }
+}
